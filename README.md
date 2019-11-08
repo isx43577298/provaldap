@@ -17,6 +17,15 @@ __Contingut B:__
 + Informacio complementaria anomenda marchenaAccount que es composa de (delictes, anyscomdemna i galeres)
 + Aquesta informacio només s'ha de afegir a dos dels socis utilitzan el fitxer marchena.ldif
 
+
+__Ordre per posar en marxa el container de les dues imatges__
+
+docker run --rm --name ldapserver2019 -h ldapserver -d isx43577298/ldapserver:2019
+docker exec -it ldapserver /bin/bash
+
+docker run --rm --name ldapserver -h ldapserver -d isx43577298/ldapserver:latest
+docker exec -it ldapserver /bin/bash
+
 __Ordre per afegir el file marchena.ldif__
 
 ldapadd -x -h 172.17.0.2 -D 'cn=Manager,dc=gustavo,dc=cat' -w secret -f marchena.ldif 
