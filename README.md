@@ -20,10 +20,10 @@ __Contingut B:__
 
 __Ordre per posar en marxa el container de les dues imatges__
 
-docker run --rm --name ldapserver2019 -h ldapserver -d isx43577298/ldapserver:2019
+docker run --rm --name ldapserver2019 -h ldapserver -d isx43577298/ldapserver:2019  
 docker exec -it ldapserver /bin/bash
 
-docker run --rm --name ldapserver -h ldapserver -d isx43577298/ldapserver:latest
+docker run --rm --name ldapserver -h ldapserver -d isx43577298/ldapserver:latest  
 docker exec -it ldapserver /bin/bash
 
 __Ordre per afegir el file marchena.ldif__
