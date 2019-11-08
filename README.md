@@ -1,17 +1,7 @@
-# Gustavo Tello Beltran ASIX Examen LDAP
+# Gustavo Tello Beltran ASIX Examen LDAP  
+## Imatge isx43577298/provaldap:2019
 
-## Repositori de github
-https://github.com/isx43577298/provaldap
-
-## Repositori de Dockerhub
-https://hub.docker.com/repository/docker/isx43577298/provaldap
-
-__Ordre per construir l'imatge provaldap:2019 i provaldap:latest__
-docker build -t isx43577298/provaldap . 
-+ Al no posar un tagname ens posa per defecte el :latest
-docker build -t isx43577298/provaldap:2019 .
-
-__Contingut A de les imatges:__
+__Contingut A:__
 
 + Entitat arrel gustavo.cat
 + Organizational unit anomenada socis
@@ -29,9 +19,14 @@ __Contingut B:__
 
 __Ordre per afegir el file marchena.ldif__
 
-ldapadd -x -h 172.17.0.2 -D 'cn=Manager,dc=gustavo,dc=cat' -w secret -f marchena.ldif
+ldapadd -x -h 172.17.0.2 -D 'cn=Manager,dc=gustavo,dc=cat' -w secret -f marchena.ldif 
 
 __Ordre per veure les dades de la imatge__
 
-ldapsearch -x -h 172.17.0.2 -D 'cn=Manager,dc=gustavo,dc=cat' -w secret 
+ldapsearch -x  -h 172.17.0.2 -D 'cn=Manager,dc=gustavo,dc=cat' -w secret 
+
+
+
+
+
 

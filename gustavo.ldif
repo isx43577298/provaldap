@@ -1,0 +1,39 @@
+dn: dc=gustavo,dc=cat
+dc: gustavo
+description: Prova Ldap M06-ASIX
+objectClass: dcObject
+objectClass: organization
+o: gustavo.cat
+
+dn: ou=socis,dc=gustavo,dc=cat
+ou: socis
+description: Container per a socis
+objectclass: organizationalunit
+
+dn: idcat=1,ou=socis,dc=gustavo,dc=cat
+objectclass: indepeOrgPerson
+objectclass: inetOrgPerson
+cn: Pere Pou
+sn: Pou
+idcat: 1
+sardanes: TRUE
+foto: ///opt/docker/photo.jpg
+twitter: @perepou
+
+dn: idcat=2,ou=socis,dc=gustavo,dc=cat
+objectclass: indepeOrgPerson
+objectclass: inetOrgPerson
+cn: Marta Mas
+sn: Mas
+idcat: 2
+sardanes: FALSE
+foto: ///opt/docker/photo.jpg
+
+dn: idcat=3,ou=socis,dc=gustavo,dc=cat
+objectclass: indepeOrgPerson
+objectclass: inetOrgPerson
+cn: Anna Pou
+sn: Pou
+idcat: 3
+twitter: @annapou
+

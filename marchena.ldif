@@ -1,0 +1,28 @@
+dn: idcat=2,ou=socis,dc=gustavo,dc=cat
+changetype: modify
+add: objectClass
+objectClass: marchenaAccount
+-
+add: delictes
+delictes: ser molt guapa
+-
+add: galeres
+galeres: FALSE
+
+dn: idcat=3,ou=socis,dc=gustavo,dc=cat
+changetype: modify
+add: objectClass
+objectClass: marchenaAccount
+-
+add: delictes
+delictes: robar un banc
+-
+add: anysComdemna
+anysComdemna: 7
+-
+add: galeres
+galeres: TRUE
+-
+add: cn
+cn: Annita Rita
+
