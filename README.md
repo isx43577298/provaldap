@@ -17,6 +17,12 @@ __Contingut B:__
 + Informacio complementaria anomenda marchenaAccount que es composa de (delictes, anyscomdemna i galeres)
 + Aquesta informacio només s'ha de afegir a dos dels socis utilitzan el fitxer marchena.ldif
 
+__Repositori Github__  
+https://github.com/isx43577298/provaldap
+
+__Repositori DockerHub__  
+https://hub.docker.com/repository/docker/isx43577298/provaldap
+
 __Ordre per descarregar-se les dues imatges__
 
 docker pull isx43577298/provaldap:latest  
